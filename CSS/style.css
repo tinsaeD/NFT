@@ -253,7 +253,7 @@ ul{
 .card1:hover div,.card2:hover div,.card3:hover div,.card4:hover div{
   display: flex;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .team{
@@ -306,7 +306,7 @@ ul{
   transform: scale(1.08);
 }
 .team-card i{
-  color: #1D9BF0;
+  color: #1881c7;
   transition: 0.1s;
   margin-top: 0.5rem;
   font-size: 40px;
@@ -348,7 +348,7 @@ footer h1{
 .social-media i{
   padding: 15px;
   font-size: 50px;
-  color: #f0a61d;
+  color: rgb(218, 252, 249);
 }
 
 .scroll-up{

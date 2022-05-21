@@ -64,3 +64,7 @@ var loader = document.getElementById("preloader")
 window.addEventListener("load",function(){
   loader.style.display ="none";
 })
+
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});

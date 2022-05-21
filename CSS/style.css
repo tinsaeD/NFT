@@ -476,6 +476,16 @@ footer h1{
   }
 }
 
+
+#preloader{
+  background: #2E566F url(/images/loader.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 /* .border{
   border: 1px solid #333;
 } */

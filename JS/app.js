@@ -10,20 +10,7 @@ function myFunction() {
   }
 
   let anchorlinks = document.querySelectorAll('a[href^="#"]')
- 
-// for (let item of anchorlinks) { // relitere 
-//     item.addEventListener('click', (e)=> {
-//         let hashval = item.getAttribute('href')
-//         let target = document.querySelector(hashval)
-//         target.scrollIntoView({
-//             behavior: 'smooth',
-//             block: 'start',
-//             inline: 'start'
-//         })
-//         history.pushState(null, null, hashval)
-//         e.preventDefault()
-//     })
-// }
+
 
 $(document).ready(function(){
     // Add smooth scrolling to all links
@@ -71,4 +58,9 @@ btns.forEach((el)=>{
         document.querySelector('.dropdown-menu').style.display = 'none'
         document.getElementById('cancel').style.display = 'none'
     })
+})
+
+var loader = document.getElementById("preloader")
+window.addEventListener("load",function(){
+  loader.style.display ="none";
 })

@@ -20,7 +20,7 @@ body{
 }
 
 .container{
-  background-image: url('/images/web 1.jpg');
+  background-image: url('../images/web\ 1.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -92,35 +92,25 @@ ul{
   align-items: center;
   min-height: 80vh;
 }
-/* .body-1 img{
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 50%;
-  margin-top: 100px;
-} */
+
 .body-1 h1{
   margin-top: 50px;
   font-size: 80px;
 }
 
 .about-us, .roadmap{
-  /* min-height: 102.8vh; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .roadmap{
   text-align: center;
-  /* justify-content: center; */
   align-items: center;
 }
 .about-us{
   transition-delay: 1s;
-  background-image: url('/images/web 2.jpg');
+  background-image: url('../images/web\ 2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,12 +153,11 @@ ul{
 }
 .roadmap{
   min-height: 83vh;
-  /* background-color: aquamarine; */
   border-color: #000;
-  background-image: url('/images/web 3.jpg');
+  background-image: url('../images/web\ 3.webp');
   background-size: cover;
 }
-.roadmap h1{
+.roadmap h2{
   font-size: 35px;
   margin-top: 50px;
   color: #ffffff;
@@ -190,10 +179,8 @@ ul{
 
 
 .FAQ{
-  background-image: url('/images/web\ 4.jpg');
+  background-image: url('../images/web\ 4.webp');
   background-size: cover;
-  /* background-color: #569db3; */
-  /* min-height: 80vh; */
   display: flex;
   flex-direction: column;
 }
@@ -231,7 +218,7 @@ ul{
   max-height: 70px;
   align-self: center;
 }
-.card h1{
+.card h2{
   margin-top: 15px;
   font-size: 23px;
   font-weight: bolder;
@@ -240,7 +227,7 @@ ul{
   transition: 0.2s;
   transform: scale(1.5);
 }
-.card1:hover h1,.card2:hover h1,.card3:hover h1,.card4:hover h1{
+.card1:hover h2,.card2:hover h2,.card3:hover h2,.card4:hover h2{
   font-size: 15px;
   font-weight: normal;
   margin-top: 5px;
@@ -298,7 +285,7 @@ ul{
   align-self: center;
   border: 4px #000 solid;
 }
-.team-card h1{
+.team-card h2{
   margin-top: 15px;
   font-size: 23px;
   font-weight: bolder;
@@ -331,6 +318,10 @@ footer .social-media{
   flex-wrap: wrap;
   justify-content: center;
 }
+footer .social-media .footer-links{
+  color: rgb(0, 80, 126);
+  transition: linear;
+}
 footer .logo{
   display: flex;
   flex-direction: row;
@@ -350,19 +341,18 @@ footer h1{
 .social-media i{
   padding: 15px;
   font-size: 50px;
-  color: rgb(218, 252, 249);
 }
 
-.scroll-up{
-  display: none;
+.scroll-up.active{
+  display: flex;
   position: fixed;
   top: 85%;
   right: 3%;
-  /* background-color: rgb(54, 41, 238); */
   border-radius: 50%;
   max-width: 100px;
   max-height: 100px;
   overflow: hidden;
+  cursor: pointer;
 }
 .scroll-up img{
   max-width: 60px;
@@ -386,6 +376,10 @@ footer h1{
 }
 .dropdown-menu{
   display: none;
+}
+
+#dropdown, #cancel{
+  cursor: pointer;
 }
 
 @media screen and (max-width : 878px) {
@@ -463,6 +457,10 @@ footer h1{
   }
   .body-1 h1{
     font-size: 35px;
+  }
+  .roadmap{
+    background-image: none;
+    background-color: #1a2d37;
   }
 }
 
@@ -551,7 +549,3 @@ footer h1{
     height: 0%;
   }
 }
-
-/* .border{
-  border: 1px solid #333;
-} */
